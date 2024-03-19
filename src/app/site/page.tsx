@@ -1,4 +1,5 @@
 import Image from "next/image";
+import previewImage from "@/../public/assets/preview.png";
 
 export default function Home() {
   return (
@@ -11,6 +12,14 @@ export default function Home() {
             Zeal
           </h1>
         </div>
+        <Image
+          src={previewImage}
+          alt="Preview image of zeal app"
+          width={1200}
+          height={1200}
+          className="rounded-tl-xl rounded-tr-xl border-2 border-muted"
+        />
+        <div className="absolute top-[50%]right-0 bottom-0-left-0 z-10 bg-gradient-to-t dark:from-background "></div>
       </section>
     </>
   );
